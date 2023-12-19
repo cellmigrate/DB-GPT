@@ -8,7 +8,7 @@ __pycache__/
 
 message/
 
-.env
+.env*
 .vscode
 .idea
 .chroma
@@ -26,9 +26,9 @@ sdist/
 
 var/
 wheels/
-models/
+/models/
 # Soft link
-models
+/models
 plugins/
 
 pip-wheel-metadata/
@@ -155,3 +155,28 @@ logswebserver.log.*
 /pilot/meta_data/*.db
 # Ignore for now
 thirdparty
+
+#web
+# dependencies
+/web/node_modules
+
+.idea
+# next.js
+/web/.next/
+/web/out/
+
+# production
+/web/build
+
+# debug
+/web/npm-debug.log*
+/web/yarn-debug.log*
+/web/yarn-error.log*
+
+# local env files
+/web/.env.prod
+/web/.env
+
+# typescript
+*.tsbuildinfo
+/web/next-env.d.ts
